@@ -55,6 +55,16 @@ body h1, h2, h3, h4, h5, h6, p, a {
     padding-inline: 0.5em;
     margin-inline: 1em;
     position: relative; 
+    font-size: 14px;
+    color: #3c281a;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.header .navbar-nav ul li a:hover {
+    color: #22170F;
+}
+.header .navbar-nav ul li a:active {
+    color: #22170F !important;
 }
 .header .navbar-nav ul li a::after {
     content: '';
@@ -63,7 +73,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #000;
+    background-color: #302015;
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
@@ -114,9 +124,22 @@ body h1, h2, h3, h4, h5, h6, p, a {
     .header .navbar .logo h1 {
         margin-right: 2em;
     }
+    .header .navbar .menu-icon {
+        width: 20px;
+    }
     .header .navbar-nav ul {
         flex-direction: column;
         padding-left: 0;
+        width: 100%;
+    }
+    .header .navbar-nav ul li a {
+        font-size: 12px;
+    }
+    .header .navbar-nav ul li a::after {
+        display: none;
+    }
+    .header .navbar-nav ul li a:hover::after {
+        display: none;
     }
 }
 @media (max-width:767px) {
@@ -133,5 +156,6 @@ body h1, h2, h3, h4, h5, h6, p, a {
     }
     .header .navbar .logo h1 {
         margin-right: 0;
+        margin-left: 15px;
     }
 }
