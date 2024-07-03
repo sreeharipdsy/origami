@@ -94,7 +94,7 @@ section {
       opacity: 1;
     }
 }
-.swipe-button {
+.section-one .swipe-button {
     position: relative;
     display: flex;
     align-items: center;
@@ -108,31 +108,32 @@ section {
     overflow: hidden;
     cursor: pointer;
     border: 2px solid #3e2c1e;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
 }
-.swipe-button .text {
+.section-one .swipe-button .text {
     position: relative;
     z-index: 2;
 }
-.swipe-overlay {
+.section-one .swipe-overlay {
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
     color: #22170F;
-    background-color: #fffaf5;
+    background-color: #fffcfc;
     transition: left 0.3s;
     border-radius: 0px 20px;
 }
-.swipe-button:hover .swipe-overlay {
+.section-one .swipe-button:hover .swipe-overlay {
     left: 0;
     transition: left 0.3s ease-out;
 }
-.swipe-button:hover .text {
+.section-one .swipe-button:hover .text {
     color: #22170F;
     transition: color 0.3s ease-out;
 }
-.swipe-button path {
+.section-one .swipe-button path {
   transition: all ease 0.3s;
 }
 @media (max-width: 992px) {
@@ -179,4 +180,117 @@ section {
           opacity: 1;
         }
     }
+}
+
+
+
+
+/* SECTION - TWO */
+.section-two {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.section-two .inner-section-two {
+  height: auto;
+  width: 100%;
+  padding-block: 10em;
+  background-image: linear-gradient(0deg, #7247260a, #7247260a), url(../images/home-page/bg-section-2.svg);
+  background-size: cover;
+}
+.section-two .inner-section-two .row .card {
+  padding: 3em;
+  padding-bottom: 2.5em;
+  border-radius: 0px 40px;
+  border: none;
+  background: #fffcfc;
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.1);
+}
+.section-two .inner-section-two .row .card h2 {
+  font-size: 18px;
+  background: #fff1e7;
+  color: #724726;
+  font-weight: 500;
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 0px 10px;
+  letter-spacing: 0.25px;
+  margin-bottom: 1em;
+}
+.section-two .inner-section-two .row .card h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #3e2c1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 12px;
+}
+.section-two .inner-section-two .row .card p {
+  font-size: 16px;
+  width: 95%;
+  line-height: 28px;
+  letter-spacing: 1px;
+} 
+.section-two .swipe-button {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1em;
+  align-items: center;
+  padding: 12px 40px 12px 40px;
+  background-color: #3e2c1e;
+  color: #fffcfc;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 0px 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  border: 2px solid #3e2c1e;
+}
+.section-two .swipe-button .text {
+  position: relative;
+  z-index: 2;
+}
+.section-two .swipe-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  color: #22170F;
+  background-color: #fffcfc;
+  transition: left 0.3s;
+  border-radius: 0px 20px;
+}
+.section-two .swipe-button:hover .swipe-overlay {
+  left: 0;
+  transition: left 0.3s ease-out;
+}
+.section-two .swipe-button:hover .text {
+  color: #22170F;
+  transition: color 0.3s ease-out;
+}
+@media (max-width: 992px) {
+  .section-two .inner-section-two .row .card  {
+    padding: 2em;
+    padding-bottom: 2em;
+  }
+  .section-two .inner-section-two .row .card h2 {
+    font-size: 14px;
+  }
+  .section-two .inner-section-two .row .card h1 {
+    font-size: 24px;
+  }
+  .section-two .inner-section-two .row .card p {
+    font-size: 13px;
+    width: 95%;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+  .section-two .swipe-button, .section-one .swipe-button {
+    padding: 8px 30px 8px 30px;
+    margin-top: 0.5em;
+  }
 }
