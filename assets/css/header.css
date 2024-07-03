@@ -58,7 +58,9 @@
     margin-inline: 1em;
     position: relative; 
     font-size: 14px;
-    color: #3c281a;
+    color: #724d33 !important;
+    background: #ffead936;
+    border-radius: 0px 20px;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -141,6 +143,7 @@
     }
     .header .navbar-nav ul li a {
         font-size: 12px;
+        background: none;
     }
     .header .navbar-nav ul li a:hover {
         color: #724d33 !important;

@@ -14,11 +14,17 @@
     list-style: none;
     padding-block: 10px;
     display: flex;
+    transition: 0.3s;
     justify-content: center;
+}
+.footer .row .footer-left ul li:hover, .footer .row .footer-right ul li:hover {
+    transition: 0.3s;
+    background: #ffeee05c;
+    border-radius: 0px 20px;
 }
 .footer .row .footer-left ul li a, .footer .row .footer-right ul li a {
     text-decoration: none;
-    color: rgb(77, 0, 77);
+    color: #3e2c1e;
     font-size: 14px;
     font-weight: 500;
 }
@@ -44,7 +50,7 @@
     letter-spacing: 2px;
     font-weight: 400;
     margin-bottom: 0;
-    color: rgb(77, 0, 77);
+    color: #3e2c1e;
 }
 .footer .row .footer-center p {
     font-size: 12px;
