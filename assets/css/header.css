@@ -6,6 +6,9 @@
     z-index: 999;
     padding-top: 0;
 }
+.header .navbar {
+    padding-bottom: 0;
+}
 .header .navbar .container {
     background: #fffcfc;
     margin-top: 1em;
