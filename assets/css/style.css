@@ -58,7 +58,7 @@ section {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    background: #ffead936;
+    /* background: #ffead936; */
     border-radius: 0px 20px;
     padding: 15px;
 }
@@ -68,7 +68,7 @@ section {
     margin: 0;
 }
 .header .navbar-nav ul li a {
-    padding-inline: 0.5em;
+    padding-inline: 1em;
     margin-inline: 1em;
     position: relative; 
     font-size: 14px;
@@ -79,8 +79,10 @@ section {
 .header .navbar-nav ul li a:hover {
     color: #22170F;
 }
-.header .navbar-nav ul li a:active {
-    color: #22170F !important;
+.header .navbar-nav ul li a:active, .header .navbar-nav ul li a:focus {
+    color: #724d33 !important;
+    background: #ffead936;
+    border-radius: 0px 20px;
 }
 .header .navbar-nav ul li a::after {
     content: '';
