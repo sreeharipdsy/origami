@@ -156,6 +156,11 @@ section {
     .header .navbar-nav ul li a {
         font-size: 12px;
     }
+    .header .navbar-nav ul li a:hover {
+        color: #724d33 !important;
+        background: #ffead936;
+        border-radius: 0px 20px;
+    }
     .header .navbar-nav ul li a::after {
         display: none;
     }
