@@ -3,7 +3,18 @@ body h1, h2, h3, h4, h5, h6, p, a {
     font-family: "Poppins", sans-serif;
 }
 
+/* SECTIONS */
+section {
+    padding-top: 100px;
+}
+
 /* HEADER - NAVBAR */
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-top: 0;
+}
 .header .navbar .container {
     background: white;
     margin-top: 1em;
@@ -157,5 +168,104 @@ body h1, h2, h3, h4, h5, h6, p, a {
     .header .navbar .logo h1 {
         margin-right: 0;
         margin-left: 15px;
+    }
+}
+
+
+
+/* SECTION - ONE */
+.section-one .row {
+    margin-top: 9em;
+}
+.section-one .row .left-img img {
+    margin-left: -5em;
+    width: 100%;
+}
+.section-one .row .right-img img {
+    margin-left: 5em;
+    width: 100%;
+}
+.section-one .row h1 {
+    color: #3e2c1e;
+    font-size: 60px;
+    font-weight: 700;
+    -webkit-animation: focus-in-expand 0.4s ease-in-out both;
+	animation: focus-in-expand 0.4s ease-in-out both;
+}
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -10px;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -10px;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+.section-one .hero-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+.swipe-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 40px 12px 40px;
+    background-color: #3e2c1e;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 0px 20px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #3e2c1e;
+}
+.swipe-button .text {
+    position: relative;
+    z-index: 2;
+}
+.swipe-overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    color: #22170F;
+    background-color: #fffaf5;
+    transition: left 0.3s;
+    border-radius: 0px 20px;
+}
+.swipe-button:hover .swipe-overlay {
+    left: 0;
+    transition: left 0.3s ease-out;
+}
+.swipe-button:hover .text {
+    color: #22170F;
+    transition: color 0.3s ease-out;
+}
+.swipe-button path {
+  transition: all ease 0.3s;
+}
+@media (max-width: 992px) {
+    .section-one .row .left-img img, .section-one .row .right-img img {
+        margin-left: 0;
     }
 }
