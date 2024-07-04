@@ -472,6 +472,10 @@ section {
     max-width: none !important;
     width: -webkit-fill-available !important;
     margin-bottom: 1em !important;
+    max-height: 10em !important;
+  }
+  .section-three .section-three-container .image img {
+    max-height: 10em;
   }
   .section-three .section-three-container .content h1 {
     font-size: 18px;
