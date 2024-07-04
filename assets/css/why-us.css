@@ -141,7 +141,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.637);
     display: none;
     align-items: center;
     opacity: 0;
@@ -158,7 +158,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
     border-radius: 0px 40px;
     border: none;
     text-align: justify;
-    background: #fffaf6;
+    background: #fffcfa;
     animation: fadeIn 0.3s ease;
 }
 .section-two .modal-content span {
@@ -171,20 +171,20 @@ body h1, h2, h3, h4, h5, h6, p, a {
     padding: 0px 12px 2px 14px;
 }
 .section-two .modal-content h1 {
-    color: #302518;
+    color: #3a2d1d;
     font-weight: 600;
     margin-top: 10px;
     font-size: 30px;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #302518;
+    border-bottom: 2px solid #3a2d1d;
     text-align: center;
 }
 .section-two .modal-content p {
     margin-bottom: 2.5em;
     font-size: 16px;
-    font-weight: 500;
-    color: #58432b;
+    font-weight: 400;
+    color: #5e462b;
 }
 @keyframes fadeIn {
     from { opacity: 0; }
