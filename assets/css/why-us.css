@@ -219,3 +219,41 @@ body h1, h2, h3, h4, h5, h6, p, a {
         margin-bottom: 1.5em;
     }
 }
+
+
+
+
+
+
+
+
+
+
+/* SECTION - THREE */
+.section-three {
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+.section-three h1 {
+    color: #3a2d1d;
+    font-size: 32px;
+    font-weight: 700;
+    word-spacing: 3px;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    padding-inline: 3em;
+    text-align: center;
+}
+@media (max-width: 992px) {
+    .section-three {
+        padding-top: 1em;
+    }
+    .section-three h1 {
+        padding-inline: 0;
+        font-size: 20px;
+        word-spacing: 2px;
+    }
+}
+
+
+
