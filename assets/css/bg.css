@@ -1,6 +1,5 @@
 .bg {
     background-color: #FFFBF9;
-    background-image: linear-gradient(0deg, #7247260a, #7247260a), url(../images/home-page/bg.svg);
-    background-attachment: fixed !important;
+    background-image: linear-gradient(0deg, #72472612, #72472612), url(../images/home-page/bg.svg);    background-attachment: fixed !important;
     background-size: cover;
 }

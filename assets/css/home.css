@@ -25,9 +25,9 @@ section {
     display: flex;
     align-items: center;
 }
-.section-one .row {
+/* .section-one .row {
     margin-top: 2em;
-}
+} */
 .section-one .row .left-img img {
     margin-left: -5em;
     width: 100%;
@@ -73,7 +73,7 @@ section {
     display: flex;
     justify-content: center;
     margin-top: 4em;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
     -webkit-animation: tracking-in-expand 0.4s ease-in-out both;
 	  animation: tracking-in-expand 0.4s ease-in-out both;
 }
@@ -140,9 +140,57 @@ section {
     color: #22170F;
     transition: color 0.3s ease-out;
 }
-.section-one .swipe-button path {
-  transition: all ease 0.3s;
+
+.section-one #toast {
+  visibility: hidden;
+  padding: 16px;
+  position: fixed;
+  z-index: 9;
+  right: 3%;
+  border-radius: 0px 20px;
+  background: #ffeedef5;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
+  color: #6a4b32;
+  font-weight: 600;
+  width: fit-content;
+  /* width: 65%; */
+  text-align: end;
+  bottom: 30px;
+  font-size: 15px;
+  transition: 0.3s;
 }
+.section-one #toast a {
+  color: #6a4b32;
+}
+
+/* Show the toast */
+.section-one #toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Add animation (fade in and fade out) */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
 @media (max-width: 992px) {
     .section-one .row {
         margin-top: 0;
@@ -419,7 +467,7 @@ section {
   margin-top: 1em;
   align-items: center;
   padding: 10px 40px 10px 40px;
-  background-color: #3e2c1e;
+  background-color: #22170F;
   color: #fffcfc;
   font-weight: 500;
   text-decoration: none;
@@ -428,7 +476,7 @@ section {
   overflow: hidden;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  border: 2px solid #3e2c1e;
+  border: 2px solid #22170F;
 }
 .section-three .swipe-button .text {
   position: relative;
