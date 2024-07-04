@@ -161,6 +161,15 @@ body h1, h2, h3, h4, h5, h6, p, a {
     background: #fffaf6;
     animation: fadeIn 0.3s ease;
 }
+.section-two .modal-content span {
+    margin-left: auto;
+    margin-top: -0.5em;
+    font-size: 25px;
+    border-radius: 0px 15px;
+    color: #443421;
+    background: #ffefe1;
+    padding: 0px 12px 2px 14px;
+}
 .section-two .modal-content h1 {
     color: #302518;
     font-weight: 600;
@@ -180,15 +189,6 @@ body h1, h2, h3, h4, h5, h6, p, a {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-.section-two .modal-content span {
-    margin-left: auto;
-    margin-top: -0.5em;
-    font-size: 25px;
-    border-radius: 0px 15px;
-    color: #443421;
-    background: #ffefe1;
-    padding: 0px 12px 2px 14px;
 }
 .section-two .modal-content span:hover {
     cursor: pointer;
