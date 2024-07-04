@@ -151,7 +151,7 @@ section {
   background: #ffeedef5;
   box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.1);
   color: #6a4b32;
-  font-weight: 600;
+  font-weight: 500;
   width: fit-content;
   /* width: 65%; */
   text-align: end;
@@ -160,31 +160,23 @@ section {
   transition: 0.3s;
 }
 .section-one #toast a {
+  font-weight: 600;
   color: #6a4b32;
 }
 
 /* Show the toast */
 .section-one #toast.show {
   visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
 /* Add animation (fade in and fade out) */
-@-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;} 
-  to {bottom: 30px; opacity: 1;}
-}
 
 @keyframes fadein {
   from {bottom: 0; opacity: 0;}
   to {bottom: 30px; opacity: 1;}
 }
 
-@-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
-  to {bottom: 0; opacity: 0;}
-}
 
 @keyframes fadeout {
   from {bottom: 30px; opacity: 1;}
@@ -467,7 +459,7 @@ section {
   margin-top: 1em;
   align-items: center;
   padding: 10px 40px 10px 40px;
-  background-color: #22170F;
+  background-color: #37271b;
   color: #fffcfc;
   font-weight: 500;
   text-decoration: none;
@@ -476,7 +468,7 @@ section {
   overflow: hidden;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
   cursor: pointer;
-  border: 2px solid #22170F;
+  border: 2px solid #37271b;
 }
 .section-three .swipe-button .text {
   position: relative;

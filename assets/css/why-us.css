@@ -1,0 +1,120 @@
+/* BODY */
+body h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* SECTION - ONE */
+.why-us-bg {
+    height: auto;
+    width: 100%;
+    background-image: url(../images/why-us-page/why-us-bg.svg);
+    background-size: cover;
+}
+.section-one {
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 7em;
+}
+.section-one h1 {
+    color: #fffcfc;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-block: 1em;
+    -webkit-animation: tracking-in-expand 0.5s ease-in-out both;
+	animation: tracking-in-expand 0.5s ease-in-out both;
+}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@media (max-width: 992px) {
+    .section-one h1 {
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* SECTION - TWO */
+.section-two {
+    padding-block: 1em;
+}
+.section-two .card {
+    width: 30%;
+    padding: 1em;
+    margin: 1em;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-left: 2px solid #58432b;
+    border-bottom: 2px solid #58432b;
+    background-color: #fffcfc;
+    border-radius: 0px 30px;
+    transition: 0.3s ease;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+    -moz-transition: all 0.3s ease;
+ -o-transition: all 0.3s ease;
+ -webkit-transition: all 0.3s ease;
+}
+.section-two .card img {
+    width: 4em;
+    transition: 0.3s;
+    margin-block: 1em;
+    margin-inline: auto;
+}
+.section-two .card h1 {
+    color: #443421;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    transition: 0.3s ease;
+    margin-top: 0.25em;
+    margin-bottom: 0.75em;
+}
+.section-two .card:hover img {
+    width: 3.5em;
+}
+@media (max-width: 992px){
+    .section-two .card {
+        width: 90%;
+    }
+}

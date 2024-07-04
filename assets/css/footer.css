@@ -5,6 +5,7 @@
     background-color: #fffcfc;
     height: auto;
     padding-bottom: 1em;
+    margin-top: -1px;
 }
 .footer .row .footer-left-mob a {
     text-decoration: none;
