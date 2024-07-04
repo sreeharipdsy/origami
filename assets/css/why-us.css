@@ -114,7 +114,11 @@ body h1, h2, h3, h4, h5, h6, p, a {
     width: 3.5em;
 }
 @media (max-width: 992px){
+    .section-two {
+        padding-block: 3em;
+    }
     .section-two .card {
         width: 90%;
+        margin: 10px;
     }
 }
