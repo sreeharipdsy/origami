@@ -167,7 +167,7 @@ section {
 /* Show the toast */
 .section-one #toast.show {
   visibility: visible;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 3s;
 }
 
 /* Add animation (fade in and fade out) */
