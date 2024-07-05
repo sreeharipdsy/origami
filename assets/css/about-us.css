@@ -1,0 +1,258 @@
+/* BODY */
+body h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* SECTION - ONE */
+.courses-bg {
+    height: auto;
+    width: 100%;
+    background-image: url(../images/about-us-page/about-us-bg.svg);
+    background-size: cover;
+}
+.section-one {
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 7em;
+}
+.section-one h1 {
+    color: #fffbf6;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-block: 1em;
+    -webkit-animation: tracking-in-expand 0.5s ease-in-out both;
+	animation: tracking-in-expand 0.5s ease-in-out both;
+}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@media (max-width: 992px) {
+    .section-one h1 {
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* SECTION - TWO */
+.section-two-mob {
+    display: none;
+}
+.section-two {
+    padding-block: 4em;
+}
+.section-two .container {
+    background: #fffcfc;
+    border-radius: 0px 40px;
+    width: auto;
+    padding: 1px;
+}
+.section-two .container .content {
+    justify-content: space-evenly;
+    padding-block: 2em;
+    margin: 3em;
+    transition: 0.3s;
+    border-radius: 0px 25px;
+}
+.section-two .container .content:hover {
+    background: #fff7f0;
+    cursor: pointer;
+}
+.section-two .container .content h1 a {
+    font-size: 48px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #37271b;
+    letter-spacing: 0.25px;
+    margin-bottom: 10px;
+}
+.section-two .container .content p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #442f20;
+    text-align: justify;
+    letter-spacing: 0.2px;
+    line-height: 1.75em;
+} 
+
+
+
+
+
+
+
+
+
+
+/* SECTION - TWO - MOBILE VIEW */
+@media (max-width: 992px) {
+  .section-two {
+    display: none;
+  }
+  .section-two-mob {
+    display: flex;
+  }
+  .section-two-mob .container {
+    margin-top: 1em;
+  }
+  .section-two-mob .container .row {
+    margin: 1em;
+    background: #fffcfc;
+    border-radius: 0px 40px;
+    padding: 1.2em;
+  }
+  .section-two-mob .row .image {
+    border-radius: 0px 30px;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+  }
+  .section-two-mob .row img {
+    max-height: 20em;
+  }
+  .section-two-mob .image-content {
+    padding: 0;
+  }
+  details { 
+    margin: auto; 
+    position: relative;
+  }
+  details > summary {
+    transition: 0.5s;
+  }
+  details[open] {
+    background: #fff7ee;
+    border-radius: 0px 20px;
+  }
+  details[open] .summary-chevron-up {
+    display: none;
+  } 
+  details summary::-webkit-details-marker {
+    display:none;
+  }
+  details {
+    transition: height 0.5s ease-in-out;
+  }
+  details:not([open]) { 
+    height: 4em; 
+  }
+  summary span {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    padding-left: 5px;
+  } 
+  .summary-content {
+    padding: 1.5em;
+    padding-top: 0;
+    margin-top: -0.5em;
+    color: #58402c;
+    font-weight: 500;
+    text-align: justify;
+    font-size: 12px;
+  }
+  summary {
+    list-style: none;
+    padding: 1em;	
+  }
+  summary:focus {
+    outline: none;
+  }
+  summary:hover .summary-chevron-up svg {
+    opacity: 1;
+  }
+  .summary-chevron-up svg {
+      opacity: 0.5;
+  }
+  .summary-chevron-up, .summary-chevron-down {
+      pointer-events: none;
+      position: absolute;
+      top: 0.75em;
+      right: 1em;
+  }
+  svg {
+    margin-top: 0.5em;
+      display: block;
+  }
+  summary::-webkit-details-marker {
+      display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION - THREE */
+.section-three {
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+.section-three h1 {
+    color: #3a2d1d;
+    font-size: 32px;
+    font-weight: 700;
+    word-spacing: 3px;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    padding-inline: 3em;
+    text-align: center;
+}
+@media (max-width: 992px) {
+    .section-three {
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+    .section-three h1 {
+        padding-inline: 0;
+        font-size: 18px;
+        padding-top: 1em;
+        word-spacing: 2px;
+    }
+}

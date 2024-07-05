@@ -91,13 +91,13 @@ body h1, h2, h3, h4, h5, h6, p, a {
   background-color: #fffcfc;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
   margin-block: 1em;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .section-two .card:hover {
   border-bottom: 2px solid #22170F;
   border-left: 2px solid #22170F;
   box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.05);
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .section-two .card .image {
   display: flex;
