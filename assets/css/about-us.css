@@ -149,6 +149,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
   }
   .section-two-mob .row img {
     max-height: 20em;
+    max-width: fit-content;
   }
   .section-two-mob .image-content {
     padding: 0;
@@ -250,7 +251,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
         padding-bottom: 2em;
     }
     .section-three h1 {
-        padding-inline: 0;
+        padding-inline: 1em;
         font-size: 18px;
         padding-top: 1em;
         word-spacing: 2px;
