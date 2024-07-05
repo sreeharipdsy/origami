@@ -83,6 +83,8 @@ body h1, h2, h3, h4, h5, h6, p, a {
 }
 .section-two .container {
     background: #fffcfc;
+    border-left: 3px solid #2e2117;
+    border-bottom: 3px solid #2e2117;
     border-radius: 0px 40px;
     width: auto;
     padding: 1px;
@@ -94,9 +96,22 @@ body h1, h2, h3, h4, h5, h6, p, a {
     transition: 0.3s;
     border-radius: 0px 25px;
 }
+.section-two .container .content:nth-child(4) {
+    padding-block: 0;
+    margin-bottom: 3.25em;
+    justify-content: space-between;
+    height: 5em;
+}
+.section-two .container .content:nth-child(4) div {
+    height: inherit;
+}
 .section-two .container .content:hover {
     background: #fff7f0;
     cursor: pointer;
+}
+.section-two .container .content:nth-child(4):hover {
+    background: #fffcfc;
+    cursor: default;
 }
 .section-two .container .content h1 a {
     font-size: 48px;
@@ -113,7 +128,48 @@ body h1, h2, h3, h4, h5, h6, p, a {
     text-align: justify;
     letter-spacing: 0.2px;
     line-height: 1.75em;
-} 
+}
+.section-two .swipe-button {
+    position: relative;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 40px 12px 40px;
+    background-color: #2e2116;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 0px 25px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #3e2c1e;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+}
+.section-two .swipe-button .text {
+    position: relative;
+    z-index: 2;
+}
+.section-two .swipe-overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    color: #22170F;
+    background-color: #fffcfc;
+    transition: left 0.2s;
+    border-radius: 0px 20px;
+}
+.section-two .swipe-button:hover .swipe-overlay {
+    left: 0;
+    transition: left 0.2s ease-out;
+}
+.section-two .swipe-button:hover .text {
+    color: #22170F;
+    transition: color 0.2s ease-out;
+}
 
 
 
@@ -161,9 +217,10 @@ body h1, h2, h3, h4, h5, h6, p, a {
     position: relative;
   }
   details > summary {
-    transition: 0.5s;
+    transition: 0s;
   }
   details[open] {
+    max-height: 300px;
     background: #fff7ee;
     border-radius: 0px 20px;
   }
@@ -174,10 +231,10 @@ body h1, h2, h3, h4, h5, h6, p, a {
     display:none;
   }
   details {
-    transition: height 0.5s ease-in-out;
+    transition: max-height 0.6s ease-in-out;
   }
   details:not([open]) { 
-    height: 4em; 
+    max-height: 4em; 
   }
   summary span {
     font-weight: bold;
@@ -198,9 +255,14 @@ body h1, h2, h3, h4, h5, h6, p, a {
   summary {
     list-style: none;
     padding: 1em;	
+    background: #fffcfc;
+  }
+  details[open] > summary {
+    background: transparent;
   }
   summary:focus {
     outline: none;
+    background: transparent;
   }
   summary:hover .summary-chevron-up svg {
     opacity: 1;
@@ -221,13 +283,52 @@ body h1, h2, h3, h4, h5, h6, p, a {
   summary::-webkit-details-marker {
       display: none;
   }
+  .section-two-mob .swipe-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #2e2116;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 0px 20px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #3e2c1e;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+  }
+  .section-two-mob .swipe-button .text {
+    position: relative;
+    z-index: 2;
+  }
+  .section-two-mob .swipe-overlay {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    color: #22170F;
+    background-color: #fffcfc;
+    transition: left 0.2s;
+    border-radius: 0px 20px;
+  }
+  .section-two-mob .swipe-button:hover .swipe-overlay {
+    left: 0;
+    transition: left 0.2s ease-out;
+  }
+  .section-two-mob .swipe-button:hover .text {
+    color: #22170F;
+    transition: color 0.2s ease-out;
+  }
 }
 @media (max-width: 476px) {
     .section-two-mob .row img {
         max-height: 10em;
     }
 }
-
 
 
 
