@@ -148,8 +148,10 @@ body h1, h2, h3, h4, h5, h6, p, a {
     justify-content: center;
   }
   .section-two-mob .row img {
-    max-height: 20em;
-    max-width: fit-content;
+    height: auto;
+    max-width: auto;
+    object-fit: cover;
+    object-position: center;
   }
   .section-two-mob .image-content {
     padding: 0;
@@ -219,6 +221,11 @@ body h1, h2, h3, h4, h5, h6, p, a {
   summary::-webkit-details-marker {
       display: none;
   }
+}
+@media (max-width: 476px) {
+    .section-two-mob .row img {
+        max-height: 10em;
+    }
 }
 
 
