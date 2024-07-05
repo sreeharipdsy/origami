@@ -106,7 +106,7 @@
     width: 1em;
     height: 2px;
     margin-left: 5px;
-    background-color: #4b014b;
+    background-color: #422e20;
     transition: all 0.3s;
 }
 .header .navbar button[aria-expanded="true"] {

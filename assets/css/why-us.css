@@ -11,7 +11,6 @@ body h1, h2, h3, h4, h5, h6, p, a {
 
 
 
-
 /* SECTION - ONE */
 .why-us-bg {
     height: auto;
@@ -89,8 +88,11 @@ body h1, h2, h3, h4, h5, h6, p, a {
     border-bottom: 2px solid #58432b;
     background-color: #fffcfc;
     border-radius: 0px 30px;
-    transition: 0.3s ease;
+    transition:  all .5s ease-in-out;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+.section-two .card:hover {
+    cursor: pointer;
 }
 .section-two .card .image {
     min-height: 6em;
@@ -130,9 +132,6 @@ body h1, h2, h3, h4, h5, h6, p, a {
 .section-two .card:hover .image {
     background: #fff2e4;
 }
-.section-two .image:hover {
-    cursor: pointer;
-}
 .section-two .modal {
     position: fixed;
     z-index: 999;
@@ -140,7 +139,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    /* overflow: auto; */
     background-color: rgba(0, 0, 0, 0.637);
     display: none;
     align-items: center;
