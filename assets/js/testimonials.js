@@ -5,6 +5,11 @@ const username = document.querySelector('.username');
 
 const testimonials = [
   {
+    name: '- Hilma',
+    text:
+      "Honestly, I’ve never been one to study regularly, but being part of this group changed everything for me. I had to tackle the questions, and in the process, I learned so much. There were times when my laziness got the best of me, and I felt like giving up on many things. However, the support and motivation from this group kept me going. I owe my newfound knowledge and progress entirely to this incredible group. Thank you so much, Team Origami, for making such a difference in my life!",
+  },
+  {
     name: '- Zahrah',
     text:
       "Your study plan was very useful. When I was struggling to know what to do, I saw your poster in the group... I was able to study with a timetable for 15 days. Discussing and learning was very useful. The point notes are really informative. Thank you!",
@@ -23,11 +28,6 @@ const testimonials = [
     name: '- Dilna',
     text:
       "I had entrance coaching before this, but I must say, I've never attended anything as wholeheartedly as this. I feel that studying together with everyone was really great. Mainly, when it came to PYQs (previous year questions), our marks increased with each attempt. Overall, it was amazing. The classes were really good, not boring at all. Your effort is worth appreciating. It was very good, thank you!",
-  },
-  {
-    name: '- Hilma',
-    text:
-      "Honestly, I’ve never been one to study regularly, but being part of this group changed everything for me. I had to tackle the questions, and in the process, I learned so much. There were times when my laziness got the best of me, and I felt like giving up on many things. However, the support and motivation from this group kept me going. I owe my newfound knowledge and progress entirely to this incredible group. Thank you so much, Team Origami, for making such a difference in my life!",
   },
 ]
 

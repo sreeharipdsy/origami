@@ -519,7 +519,8 @@ section {
     max-width: none !important;
     width: -webkit-fill-available !important;
     margin-bottom: 1em !important;
-    min-height: inherit !important;
+    min-height: 8em !important;
+    max-height: 8em !important;
   }
   .section-three .section-three-container .image img {
     max-height: 8em;
