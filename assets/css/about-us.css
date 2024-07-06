@@ -217,7 +217,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
     position: relative;
   }
   details > summary {
-    transition: 0.3s;
+    transition: 0.2s;
   }
   details[open] {
     background: #fff7ee;
@@ -228,16 +228,16 @@ body h1, h2, h3, h4, h5, h6, p, a {
   } 
   details summary::-webkit-details-marker {
     display:none;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
   }
   details {
-    transition: height 0.3s ease-in-out;
+    transition: height 0.2s ease-in-out;
   }
   details:not([open]) { 
     height: 4em; 
   }
   details[open] {
-    height: 16em;
+    height: 18em;
     max-height: fit-content;
     /* max-height: 300px; */
   }
