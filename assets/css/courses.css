@@ -140,10 +140,11 @@ body h1, h2, h3, h4, h5, h6, p, a {
 .section-two .swipe-button {
   position: relative;
   display: flex;
-  width: fit-content;
+  width: auto;
+  justify-content: center;
   margin-top: 0;
   align-items: center;
-  padding: 10px 40px 10px 40px;
+  padding: 10px 40px;
   background-color: #37271b;
   color: #fffcfc;
   font-weight: 500;
@@ -158,6 +159,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
 .section-two .swipe-button .text {
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 .section-two .swipe-overlay {
   position: absolute;
@@ -194,7 +196,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
     max-width: none !important;
     width: -webkit-fill-available !important;
     margin-bottom: 1em !important;
-    max-height: 10em !important;
+    min-height: 10em !important;
   }
   .section-two .image img {
     max-height: 10em;
@@ -212,6 +214,7 @@ body h1, h2, h3, h4, h5, h6, p, a {
     width: auto;
     margin-top: 1.25em;
     justify-content: center;
+    padding: 10px 15px;
   }
 }
 

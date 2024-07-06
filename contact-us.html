@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Origami | Why-Us?</title>
+    <title>Origami | Our Courses</title>
 
     <!-- Favicon -->
     <link href="assets/images/logo/logo-favicon.png" rel="icon">
 
     <!-- CSS -->
     <link href="assets/css/bg.css" rel="stylesheet">
-    <link href="assets/css/why-us.css" rel="stylesheet">
+    <link href="assets/css/contact-us.css" rel="stylesheet">
     <link href="assets/css/header.css" rel="stylesheet">
     <link href="assets/css/footer.css" rel="stylesheet">
 
@@ -32,7 +32,7 @@
 
 <body>
 
-    <div class="why-us-bg">
+    <div class="contact-bg">
 
         <!-- Header - Navbar -->
         <section class="header">
@@ -51,10 +51,10 @@
                     <div class="navbar-nav">
                       <ul>
                         <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="why-us.html">Why-Us?</a></li>
                         <li><a class="nav-link" href="courses.html">Courses</a></li>
                         <li><a class="nav-link" href="about-us.html">About Us</a></li>
                         <!-- <li><a class="nav-link" href="#">Pricing</a></li> -->
-                        <li><a class="nav-link" href="contact-us.html">Contact Us</a></li>
                         <li><a class="nav-link" href="index.html#testimonials">Testimonials</a></li>
                         <li><a class="nav-link" href="blog.html">Blog</a></li>
                       </ul>
@@ -69,7 +69,7 @@
         <section class="section-one">
             <div class="container">
                 <div class="page-title">
-                    <h1>Why-Us?</h1>
+                    <h1>Contact Us</h1>
                 </div>
             </div>
         </section>
@@ -77,104 +77,64 @@
     </div>
     
 
-    <!-- Section Two - Why Us Cards -->
-    <section class="section-two bg">
+    <!-- Section Two - Contact Us - Form -->
+    <section class="contact bg">
         <div class="container">
-            <div class="row justify-content-center" data-aos="fade">
-                <div class="col-lg-4 card" data-aos="zoom-in" >
-                    <div  class="image">
-                        <img src="assets/icons/why-us-page/instructor.png" alt="">
-                    </div>
-                    <h1>Expert Instructors</h1>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="origamiform" action="" class="origami-form" data-aos="fade-up">
+                      <div class="row">
+                        <div class="form-group col-md-6" style="display: none;">
+                          <input value=" " type="text" class="form-control" name="Origami Contact Form" id="OrigamiContactForm" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">Your Name</label>
+                          <input type="text" class="form-control" name="name" id="name" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">WhatsApp Number</label>
+                          <input type="text" maxlength="10" autocomplete="off" class="form-control mob-input" name="mobile" id="mobile" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="">Your Email</label>
+                          <input type="email" class="form-control" name="email" id="email" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <!-- <input type="" class="form-control" name="email" id="email" placeholder="Email" required> -->
+                          <label for="">I'm Interested to Enroll In</label>
+                          <select type="number" class="form-control" name="services" id="services" required>
+                            <option></option>
+                            <option value="CUET Foundation Course">CUET Foundation Course</option>
+                            <option value="JMI Entrance Coaching">JMI Entrance Coaching</option>
+                            <option value="Semester Tuitions">Semester Tuitions</option>
+                            <option value="CUET Crash Course">CUET Crash Course</option>
+                            <option value="UGC NET Crash Course">UGC NET Crash Course</option>
+                            <option value="Coaching for Other Competitive Exams">Coaching for Other Competitive Exams</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group col-md-12">
+                        <label for="">Brief About Yourself</label>
+                        <input type="text" class="form-control" name="message" id="message" required>
+                      </div>
+                      <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
                 </div>
-                <div class="col-lg-4 card" data-aos="zoom-in">
-                    <div class="image">
-                        <img src="assets/icons/why-us-page/curriculum.png" alt="">
-                    </div>
-                    <h1>Comprehensive Curriculum</h1>
-                </div>
-                <div class="col-lg-4 card" data-aos="zoom-in">
-                    <div class="image">
-                        <img src="assets/icons/why-us-page/instructor.png" alt="">
-                    </div>
-                    <h1>Affordable Pricing</h1>
-                </div>
-                <div class="col-lg-4 card" data-aos="zoom-in">
-                    <div class="image">
-                        <img src="assets/icons/why-us-page/learning.png" alt="">
-                    </div>
-                    <h1>Flexible Learning</h1>
-                </div>
-                <div class="col-lg-4 card" data-aos="zoom-in">
-                    <div class="image">
-                        <img src="assets/icons/why-us-page/approach.png" alt="">
-                    </div>
-                    <h1>Success-Oriented Approach</h1>
-                </div>
-                <div class="col-lg-4 card" data-aos="zoom-in">
-                    <div class="image">
-                        <img src="assets/icons/why-us-page/customer-care.png" alt="">
-                    </div>
-                    <h1>Community Support</h1>
-                </div>
-            </div>
-        </div>
-
-        <div id="myModal1" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Expert Instructors</h1>
-                <p>At Origami, we pride ourselves on having a team of highly qualified and experienced instructors. Our experts are dedicated to providing you with the latest knowledge and techniques in the field of psychology, ensuring you receive top-notch education.</p>
-            </div>
-        </div>
-        <div id="myModal2" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Comprehensive Curriculum</h1>
-                <p>Our courses cover a wide range of topics in psychology, from foundational theories to advanced concepts. Whether you're preparing for competitive exams like CUET, JMI, NET, or simply looking to deepen your understanding of the human mind, our curriculum is designed to meet your needs.</p>
-            </div>
-        </div>
-        <div id="myModal3" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Affordable Pricing</h1>
-                <p>We believe that quality education should be accessible to everyone. That's why we offer our courses at competitive prices, ensuring that you get the best value for your investment. Our affordable pricing allows you to pursue your educational goals without breaking the bank.</p>
-            </div>
-        </div>
-        <div id="myModal4" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Flexible Learning</h1>
-                <p>Origami's online platform offers the flexibility to learn at your own pace and convenience. With 24/7 access to course materials, you can study anytime, anywhere, making it easier to balance your education with other commitments.</p>
-            </div>
-        </div>
-        <div id="myModal5" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Success-Oriented Approach</h1>
-                <p>Our courses are designed with a focus on helping you succeed. We provide comprehensive study materials, practice tests, and personalized support to ensure you're well-prepared for your exams and professional endeavors.</p>
-            </div>
-        </div>
-        <div id="myModal6" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h1>Community Support</h1>
-                <p>Join a community of like-minded learners and professionals who share your passion for psychology. Our interactive forums and group discussions provide opportunities for networking, collaboration, and support throughout your learning journey.</p>
             </div>
         </div>
     </section>
 
 
-    <!-- Section three -->
+    <!-- Section three
     <section class="section-three bg">
         <div class="container">
             <div class="text" data-aos="fade-up">
                 <h1>
-                    <q>Choose Origami for a transformative educational experience in psychology. Let us help you unfold your potential and achieve your academic and career goals</q>
+                    <q>Embark on a journey to explore the fascinating world of psychology with Origami. Enhance your knowledge, achieve your academic goals, and unlock new opportunities with our comprehensive courses.</q>
                 </h1>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- Footer -->

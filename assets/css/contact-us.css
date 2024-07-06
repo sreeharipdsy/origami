@@ -1,0 +1,146 @@
+/* BODY */
+body h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+/* SECTION - ONE */
+.contact-bg {
+    height: auto;
+    width: 100%;
+    background-image: url(../images/contact-us-page/contact-us-bg.svg);
+    background-size: cover;
+}
+.section-one {
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 7em;
+}
+.section-one h1 {
+    color: #fffbf6;
+    font-size: 72px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-block: 1em;
+    -webkit-animation: tracking-in-expand 0.5s ease-in-out both;
+	animation: tracking-in-expand 0.5s ease-in-out both;
+}
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@media (max-width: 992px) {
+    .section-one h1 {
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* CONTACT FORM */
+.contact {
+  padding-top: 2em;
+}
+.contact .left h1 {
+  color: #302318;
+  text-align: justify;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.4;
+  padding-right: 1em;
+  letter-spacing: 0.5px;
+}
+.contact .origami-form {
+  border-radius: 0px 20px;
+  width: 100%;
+  /* border-bottom: 2px solid #3c2c1e;
+  border-left: 2px solid #3c2c1e; */
+  padding: 30px;
+  background: #fffcfc;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+.contact .origami-form .form-group {
+  margin-bottom: 20px;
+}
+.contact .origami-form label {
+  padding-bottom: 0px;
+  font-size: 14px;
+  margin-left: 2px;
+  color: #22191292;
+}
+.contact .origami-form input, .contact .origami-form textarea, .contact .origami-form select {
+  border-radius: 0px;
+  box-shadow: none;
+  font-size: 14px;
+  font-weight: 700;
+  background: #fffcfc;
+  border: none;
+  border-bottom: 2px solid #3023184a;
+}
+.contact .origami-form input:focus, .contact .origami-form textarea:focus, .contact .origami-form select:focus {
+  border-color: #302318c2;
+}
+.contact .origami-form input, .contact .origami-form select {
+  height: 40px;
+}
+.contact .origami-form textarea {
+  padding: 0px 0px;
+}
+.contact .origami-form button[type=submit] {
+  background: #302318;
+  width: 100%;
+  border: 2px solid #302318;
+  padding: 8px 32px;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  color: #fffcfc;
+  transition: 0.3s;
+  border-radius: 0px 10px;
+}
+.contact .origami-form button[type=submit]:hover {
+  color: #302318;
+  background: #684d2f0d;
+}
+@media (max-width: 767px) {
+  .contact {
+    padding-top: 1em;
+  }
+}

@@ -606,7 +606,7 @@ section {
 .testimonial-container .center-content {
   display: flex;
   align-items: center;
-  background-color: #ffeada;
+  background-color: #fff3eb;
   padding: 1.5em;
   border-radius: 0px 20px;
   height: 16em;
@@ -657,8 +657,7 @@ section {
   animation: grow 5s linear infinite;
   transform-origin: left;
 }
-
-@keyframes grow{
+@keyframes grow {
   0%{
     transform: scaleX(0);
   }
