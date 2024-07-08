@@ -134,6 +134,9 @@
     .footer .copyright p {
         font-size: 12px;
     }
+    .scroll-to-top svg {
+        margin-top: 0;
+    }
     .scroll-to-top {
         bottom: 30px;
         right: 2px;
