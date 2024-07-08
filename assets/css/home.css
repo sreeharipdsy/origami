@@ -625,6 +625,7 @@ section {
   margin-bottom: 0px;
   padding-inline: 1em;
   font-size: 14px;
+  transition: 0.3s;
   font-style: italic;
 }
 .testimonial-container .user{
@@ -646,6 +647,16 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
+}
+.testimonial, .username {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+.testimonial.fade-out, .username.fade-out {
+  opacity: 0;
+}
+.testimonial.fade-in, .username.fade-in {
+  opacity: 1;
 }
 .testimonial-container .progressbg {
   background: #ffe3c763;
