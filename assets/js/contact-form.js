@@ -2,13 +2,13 @@
 $("#origami-form").submit((e)=>{
     e.preventDefault()
     $.ajax({
-        url:"https://script.google.com/macros/s/AKfycbzTsNrEW7ZJzVSnuCTJbTgqmSPpWARrD6c7Gd0ZdD3BSk1skcwpvlEIJwR_C7vbHjqL4w/exec",
+        url:"https://script.google.com/macros/s/AKfycbxJ37Bnv-qtsa1BCuGdkCeiJwQ_CTIPpVPFapLFKt_VPpVK3zDkvxGHVcYhZqI-ofMzbA/exec",
         data:$("#origami-form").serialize(),
         method:"post",
         success:function (response) {
             Swal.fire({
-                title: "Thank you!",
-                text: "We will Catch you Soon..!",
+                title: "Thank you for choosing Origami!",
+                text: "We will contact you soon",
                 icon: "success"
             }).then ((result) => {
                 window.location.reload();
