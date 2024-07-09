@@ -185,6 +185,21 @@ body h1, h2, h3, h4, h5, h6, p, a {
     font-weight: 400;
     color: #5e462b;
 }
+.section-two .modal-content a {
+    background: #302318;
+    width: 100%;
+    border: 2px solid #302318;
+    padding: 8px 32px;
+    color: #fffcfc;
+    transition: 0.3s;
+    border-radius: 0px 15px;
+    text-align: center;
+    text-decoration: none;
+}
+.section-two .modal-content a:hover {
+    color: #302318;
+    background: #684d2f0d;
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

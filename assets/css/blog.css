@@ -248,9 +248,12 @@ body h1, h2, h3, h4, h5, h6, p, a {
     font-size: 16px;
     margin: auto;
     color: #25170d;
+    background: #fffcfc;
+    border-radius: 0px 40px;
+    padding: 1.75em 1em 1em 1em;
 }
 .section-three .text h6 {
-    font-size: 16px;
+    font-size: 13px;
     margin-block: 1em;
     line-height: 1.6;
 }
