@@ -2,9 +2,14 @@
 body h1, h2, h3, h4, h5, h6, p, a {
     font-family: "Poppins", sans-serif;
 }
-
-
-
+img {
+  -drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 /* SECTIONS */
 section {
     padding-top: 100px;
