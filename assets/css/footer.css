@@ -95,6 +95,11 @@ img {
     color: #3e2c1e;
     margin-bottom: 0;
 }
+.footer .copyright a {
+    color: #3e2c1e;
+    font-weight: 600;
+    text-decoration: none;
+}
 .scroll-to-top {
     position: fixed;
     bottom: 25%;
