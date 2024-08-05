@@ -44,7 +44,7 @@ section {
 .section-one .row h1 {
     color: #3e2c1e;
     font-size: 60px;
-    font-weight: 700;
+    font-weight: 800;
     -webkit-animation: focus-in-expand 0.4s ease-in-out both;
 	animation: focus-in-expand 0.4s ease-in-out both;
 }
