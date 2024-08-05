@@ -41,7 +41,7 @@ img {
     letter-spacing: 1px;
     padding-block: 1em;
     -webkit-animation: tracking-in-expand 0.5s ease-in-out both;
-	animation: tracking-in-expand 0.5s ease-in-out both;
+	  animation: tracking-in-expand 0.5s ease-in-out both;
 }
 @-webkit-keyframes tracking-in-expand {
     0% {
