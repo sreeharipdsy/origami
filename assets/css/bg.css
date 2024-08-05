@@ -1,35 +1,40 @@
 .bg {
-    background-color: #FFFBF9;
-    background-image: linear-gradient(0deg, #72472612, #72472612), url(../images/home-page/bg.svg);    
-    background-attachment: scroll !important;
-    background-size: cover;
+  background-color: #fffbf9;
+  background-image: linear-gradient(0deg, #72472612, #72472612),
+    url(../images/home-page/bg.svg);
+  background-attachment: scroll !important;
+  background-size: cover;
 }
 .bg-2 {
-    background-color: #FFFBF9;
-    background-image: linear-gradient(0deg, #72472612, #72472612), url(../images/home-page/abstract-bg-1.jpg);    
-    background-attachment: scroll !important;
-    background-size: cover;
+  background-color: #fffbf9;
+  background-image: linear-gradient(0deg, #72472612, #72472612),
+    url(../images/home-page/abstract-bg-1.jpg);
+  background-attachment: scroll !important;
+  background-size: cover;
 }
 .bg-3 {
-    background-color: #FFFBF9;
-    background-image: linear-gradient(0deg, #72472612, #72472612), url(../images/home-page/abstract-bg-3.jpg);    
-    background-attachment: scroll !important;
-    background-position: left;
-    background-size: cover;
+  background-color: #fffbf9;
+  background-image: linear-gradient(0deg, #72472612, #72472612),
+    url(../images/home-page/abstract-bg-3.jpg);
+  background-attachment: scroll !important;
+  background-position: left;
+  background-size: cover;
 }
 .bg-4 {
-    background-color: #FFFBF9;
-    background-image: linear-gradient(0deg, #72472612, #72472612), url(../images/home-page/abstract-bg-4.jpg);    
-    background-attachment: scroll !important;
-    background-size: cover;
+  background-color: #fffbf9;
+  background-image: linear-gradient(0deg, #72472612, #72472612),
+    url(../images/home-page/abstract-bg-4.jpg);
+  background-attachment: scroll !important;
+  background-size: cover;
 }
 .bg-5 {
-    background-color: #FFFBF9;
-    background-image: linear-gradient(0deg, #72472612, #72472612), url(../images/home-page/abstract-bg-5.jpg);    
-    background-attachment: scroll !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+  background-color: #fffbf9;
+  background-image: linear-gradient(0deg, #72472612, #72472612),
+    url(../images/home-page/abstract-bg-5.jpg);
+  background-attachment: scroll !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }

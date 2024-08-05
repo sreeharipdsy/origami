@@ -1,6 +1,13 @@
 /* BODY */
-body h1, h2, h3, h4, h5, h6, p, a {
-    font-family: "Poppins", sans-serif;
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Poppins", sans-serif;
 }
 img {
   -drag: none;
@@ -11,80 +18,62 @@ img {
   -ms-user-select: none;
 }
 
-
-
-
-
-
-
-
-
-
 /* SECTION - ONE */
 .courses-bg {
-    height: auto;
-    width: 100%;
-    background-image: url(../images/blog-page/blog-bg.svg);
-    background-size: cover;
+  height: auto;
+  width: 100%;
+  background-image: url(../images/blog-page/blog-bg.svg);
+  background-size: cover;
 }
 .section-one {
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding-top: 7em;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 7em;
 }
 .section-one h1 {
-    color: #fffbf6;
-    font-size: 72px;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 1px;
-    padding-block: 1em;
-    -webkit-animation: tracking-in-expand 0.5s ease-in-out both;
-	  animation: tracking-in-expand 0.5s ease-in-out both;
+  color: #fffbf6;
+  font-size: 72px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-block: 1em;
+  -webkit-animation: tracking-in-expand 0.5s ease-in-out both;
+  animation: tracking-in-expand 0.5s ease-in-out both;
 }
 @-webkit-keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 992px) {
-    .section-one h1 {
-        font-size: 50px;
-    }
+  .section-one h1 {
+    font-size: 50px;
+  }
 }
-
-
-
-
-
-
-
-
-
 
 /* SECTION - TWO */
 .section-two {
-    padding-block: 4em;
+  padding-block: 4em;
 }
 .section-two .card {
   padding: 2em;
@@ -102,8 +91,8 @@ img {
   transition: 0.3s;
 }
 .section-two .card:hover {
-  border-bottom: 2px solid #22170F;
-  border-left: 2px solid #22170F;
+  border-bottom: 2px solid #22170f;
+  border-left: 2px solid #22170f;
   box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
 }
@@ -124,7 +113,6 @@ img {
   max-height: 15em;
   height: -webkit-fill-available;
   transition: 0.3s;
-
 }
 .section-two .card:hover .image img {
   width: 90%;
@@ -138,7 +126,7 @@ img {
 }
 .section-two .card h1 {
   font-size: 24px;
-  color: #22170F;
+  color: #22170f;
 }
 .section-two .card p {
   text-align: justify;
@@ -175,7 +163,7 @@ img {
   left: -100%;
   width: 100%;
   height: 100%;
-  color: #22170F;
+  color: #22170f;
   background-color: #fffcfc;
   transition: left 0.2s;
   border-radius: 0px 20px;
@@ -185,7 +173,7 @@ img {
   transition: left 0.2s ease-out;
 }
 .section-two .swipe-button:hover .text {
-  color: #22170F;
+  color: #22170f;
   transition: color 0.2s ease-out;
 }
 @media (max-width: 992px) {
@@ -226,52 +214,43 @@ img {
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* SECTION - THREE */
 .section-three {
-    padding-top: 3em;
+  padding-top: 3em;
 }
 .section-three h1 {
-    color: #3a2d1d;
-    font-size: 32px;
-    font-weight: 700;
-    word-spacing: 3px;
-    line-height: 1.5em;
-    margin-bottom: 0;
-    padding-inline: 3em;
-    text-align: center;
+  color: #3a2d1d;
+  font-size: 32px;
+  font-weight: 700;
+  word-spacing: 3px;
+  line-height: 1.5em;
+  margin-bottom: 0;
+  padding-inline: 3em;
+  text-align: center;
 }
 .section-three .text {
-    text-align: justify;
-    text-align: justify;
-    padding-block: 1em;
-    font-size: 16px;
-    margin: auto;
-    color: #25170d;
-    background: #fffcfc;
-    border-radius: 0px 40px;
-    padding: 1.75em 1em 1em 1em;
+  text-align: justify;
+  text-align: justify;
+  padding-block: 1em;
+  font-size: 16px;
+  margin: auto;
+  color: #25170d;
+  background: #fffcfc;
+  border-radius: 0px 40px;
+  padding: 1.75em 1em 1em 1em;
 }
 .section-three .text h6 {
-    font-size: 13px;
-    margin-block: 1em;
-    line-height: 1.6;
+  font-size: 13px;
+  margin-block: 1em;
+  line-height: 1.6;
 }
 @media (max-width: 992px) {
-    .section-three {
-        padding-top: 1em;
-    }
-    .section-three h1 {
-        padding-inline: 0;
-        font-size: 18px;
-        word-spacing: 2px;
-    }
+  .section-three {
+    padding-top: 1em;
+  }
+  .section-three h1 {
+    padding-inline: 0;
+    font-size: 18px;
+    word-spacing: 2px;
+  }
 }

@@ -1,6 +1,13 @@
 /* BODY */
-body h1, h2, h3, h4, h5, h6, p, a {
-    font-family: "Poppins", sans-serif;
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Poppins", sans-serif;
 }
 img {
   -drag: none;
@@ -11,76 +18,58 @@ img {
   -ms-user-select: none;
 }
 
-
-
-
-
-
-
-
-
-
 /* SECTION - ONE */
 .contact-bg {
-    height: auto;
-    width: 100%;
-    background-image: url(../images/contact-us-page/contact-us-bg.svg);
-    background-size: cover;
+  height: auto;
+  width: 100%;
+  background-image: url(../images/contact-us-page/contact-us-bg.svg);
+  background-size: cover;
 }
 .section-one {
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding-top: 7em;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 7em;
 }
 .section-one h1 {
-    color: #fffbf6;
-    font-size: 72px;
-    font-weight: 800;
-    text-align: center;
-    letter-spacing: 1px;
-    padding-block: 1em;
-    -webkit-animation: tracking-in-expand 0.5s ease-in-out both;
-	animation: tracking-in-expand 0.5s ease-in-out both;
+  color: #fffbf6;
+  font-size: 72px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 1px;
+  padding-block: 1em;
+  -webkit-animation: tracking-in-expand 0.5s ease-in-out both;
+  animation: tracking-in-expand 0.5s ease-in-out both;
 }
 @-webkit-keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 992px) {
-    .section-one h1 {
-        font-size: 50px;
-    }
+  .section-one h1 {
+    font-size: 50px;
+  }
 }
-
-
-
-
-
-
-
-
-
 
 /* CONTACT FORM */
 .contact {
@@ -112,7 +101,9 @@ img {
   margin-left: 2px;
   color: #22191292;
 }
-.contact .origami-form input, .contact .origami-form textarea, .contact .origami-form select {
+.contact .origami-form input,
+.contact .origami-form textarea,
+.contact .origami-form select {
   border-radius: 0px;
   box-shadow: none;
   font-size: 14px;
@@ -121,13 +112,15 @@ img {
   border: none;
   border-bottom: 2px solid #3023184a;
 }
-.contact .origami-form input:focus, .contact .origami-form textarea:focus, .contact .origami-form select:focus {
+.contact .origami-form input:focus,
+.contact .origami-form textarea:focus,
+.contact .origami-form select:focus {
   border-color: #302318c2;
 }
 .contact .origami-form textarea {
   padding: 0px 0px;
 }
-.contact .origami-form button[type=submit] {
+.contact .origami-form button[type="submit"] {
   background: #302318;
   width: 100%;
   border: 2px solid #302318;
@@ -138,7 +131,7 @@ img {
   transition: 0.3s;
   border-radius: 0px 10px;
 }
-.contact .origami-form button[type=submit]:hover {
+.contact .origami-form button[type="submit"]:hover {
   color: #302318;
   background: #684d2f0d;
 }
@@ -150,11 +143,6 @@ img {
     display: block;
   }
 }
-
-
-
-
-
 
 /* SECTION - THREE */
 .section-three {
@@ -173,13 +161,13 @@ img {
 }
 @media (max-width: 992px) {
   .section-three {
-      padding-top: 1em;
-      padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
   }
   .section-three h1 {
-      padding-inline: 0;
-      font-size: 18px;
-      padding-top: 1em;
-      word-spacing: 2px;
+    padding-inline: 0;
+    font-size: 18px;
+    padding-top: 1em;
+    word-spacing: 2px;
   }
 }
