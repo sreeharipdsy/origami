@@ -11,7 +11,7 @@ details.forEach((targetDetail) => {
 });
 
 function ImgChanger(i) {
-    document.getElementById("outcomes-img").setAttribute("src", `assets/images/about-us-page/image-${i}.svg`);
+  document
+    .getElementById("outcomes-img")
+    .setAttribute("src", `assets/images/about-us-page/image-${i}.svg`);
 }
-
-  
