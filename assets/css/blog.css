@@ -82,6 +82,11 @@ img {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
 }
+@media (max-width: 991px) {
+  .section-two .parent {
+    grid-template-columns: repeat(1, 1fr);   
+  }
+}
 .section-two .card {
   margin-inline: auto;
   align-items: center;
@@ -91,7 +96,6 @@ img {
   border-radius: 0px 40px;
   background-color: #fffcfc;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
-  margin-block: 1em;
   transition: 0.3s;
 }
 .section-two .card:hover {
@@ -108,7 +112,7 @@ img {
   min-height: 14em;
   height: 100%;
   background-color: #ffe7d538;
-  border-radius: 0px 20px;
+  border-radius: 0px 40px;
 }
 .section-two .card img {
   width: 100%;
@@ -127,15 +131,38 @@ img {
   display: flex;
   flex-direction: column;
 }
+.section-two .author {
+  justify-content: space-between;
+  gap: 5px;
+}
+.section-two .author .left,
+.section-two .author .right {
+  gap: 4px;
+}
+.section-two .author img {
+  height: 21px;
+  width: 21px;
+}
+.section-two .author p {
+  margin: 0;
+  /* color: #6b4932 !important; */
+  /* font-weight: 500; */
+  font-size: 13px;
+}
 .section-two .card h1 {
-  font-size: 24px;
+  font-size: 21px;
   color: #22170f;
   margin-top: 10px;
+  font-weight: 600;
 }
-.section-two .card p {
+.section-two .card .blog-desc {
   text-align: justify;
   font-size: 13px;
   color: #352519;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .section-two .swipe-button {
   position: relative;
@@ -149,7 +176,7 @@ img {
   color: #fffcfc;
   font-weight: 500;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 0px 20px;
   overflow: hidden;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
@@ -184,35 +211,25 @@ img {
   .section-two {
     padding-block: 1em;
   }
-  .section-two .card {
-    flex-direction: column;
-    width: 90%;
-    margin: auto !important;
-    margin-bottom: 1.5em !important;
-    padding: 1.5em;
-  }
   .section-two .image {
     margin: 0 !important;
     max-width: none !important;
     width: -webkit-fill-available !important;
-    margin-bottom: 1em !important;
     min-height: 10em !important;
   }
   .section-two .image img {
-    max-height: 10em;
+    max-height: 12em;
   }
   .section-two .content h1 {
     font-size: 18px;
     margin-top: 10px;
   }
-  .section-two .content p {
+  .section-two .content .blog-desc {
     font-size: 13px;
-    margin-top: 1em;
     letter-spacing: -0.25px;
   }
   .section-two .swipe-button {
     width: auto;
-    margin-top: 1.25em;
     justify-content: center;
     padding: 10px 15px;
   }
