@@ -7,7 +7,7 @@ const blogs = [
         date: '14/08/2024',
         heading: 'Blog Heading',
         description: 'This is a blog description will be given here as description blog description will be given here as description blog description will be given here as description',
-        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br><br> hi"
     }
 ]
 
@@ -28,7 +28,8 @@ function renderBlog(blogs) {
             <div class="image">
               <img
                 src="${blog.image}"
-                alt=""/>
+                onclick="openBlogPage(${blog.id})"
+                alt="Blog-Image"/>
             </div>
             <div class="content">
               <div class="author d-flex align-items-center">
@@ -40,17 +41,14 @@ function renderBlog(blogs) {
                   <img src="assets/icons/calendar.svg" alt="">
                   <p>${blog.date}</p>
                 </div>
-              </div>
+              </div><hr>
               <h1>${blog.heading}</h1>
               <p class="blog-desc">
                 ${blog.description}
               </p>
-              <a
-                href="https://wa.me/+917306954404text=Hello%20Origami!%20I%20am%20looking%20forward%20to%20taking%20CUET%20Foundation%20Course.."
-                target="_blank"
-                class="swipe-button">
-                <span class="text">Read More ></span>
-                <span class="swipe-overlay"></span>
+              <a class="button"
+                 onclick="openBlogPage(${blog.id})">
+                Read More >
               </a>
             </div>
       `;
