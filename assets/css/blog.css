@@ -119,6 +119,7 @@ img {
   max-height: 14em;
   height: -webkit-fill-available;
   transition: 0.3s;
+  cursor: pointer;
 }
 .section-two .card:hover .image img {
   transform: scale(1.05);
@@ -229,8 +230,44 @@ img {
   overflow-y: auto;
   width: 50% !important;
 }
+.modal-content img {
+  max-height: 20em;
+  display: flex;
+  margin: auto;
+}
+.modal-content .content {
+  width: 100%;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+.modal-content .author {
+  justify-content: space-between;
+  gap: 5px;
+}
+.modal-content .author .left,
+.modal-content .author .right {
+  gap: 4px;
+}
+.modal-content .author img {
+  height: 21px;
+  width: 21px;
+}
+.modal-content .author p {
+  margin: 0;
+  font-size: 13px;
+}
+.modal-content h1 {
+  font-size: 21px;
+  color: #22170f;
+}
+.modal-content .blog-desc {
+  font-size: 14px;
+  text-align: justify;
+}
 @media (max-width: 991px) {
   .modal-content {width: 100% !important;}
+  .modal-content img {max-height: 12em;}
 }
 
 

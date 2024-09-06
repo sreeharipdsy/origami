@@ -23,13 +23,8 @@ function openBlogPage(blogId) {
               <p class="blog-desc">
                 ${blog.content}
               </p>
-              <a class="button"
-                 onclick="openBlogPage(${blog.id})">
-                Read More >
-              </a>
             </div>
       `;
-
   toggleBlogModal();
 }
 
